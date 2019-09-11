@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha="0.3"
+        android:src="@drawable/fondo2"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/carnet_photo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cv"
+                android:layout_below="@id/carnet_photo"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/titulo_text"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ad"
+                android:scaleType="centerCrop"
+                android:padding="30dp"
+
+                />
+
+            <TextView
+                android:id="@+id/name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titulo_text"
+                android:padding="8dp"
+                android:text="Carlos"
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cargo_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_text"
+                android:padding="10dp"
+                android:text="Diseño Industrial"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
